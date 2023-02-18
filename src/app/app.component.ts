@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
+import { UserFormComponent } from './user-form.components';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  standalone: true,
+  imports: [UserFormComponent],
+  template: `<app-user-form />`,
 })
-export class AppComponent {
-  title = 'ng-complex-reactive-forms';
-}
+export class AppComponent {}
